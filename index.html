@@ -14,10 +14,17 @@
           html{
 margin-right:0px;
 margin-left: 0px;
+background-color: #fff;
           }
-           .parallax-container {
+      #nav .color-primary-dark{
+        color: #2196f3;
+      }
+      #nav .color-primary-dark-back a{
+        background-color: #2196f3;
+      }
+      .parallax-container {
       height: 300px;
-    }
+      }
     .git-logo:hover{
       height: 72px;
       width: 72px;
@@ -25,6 +32,7 @@ margin-left: 0px;
       padding: 10px;
       border: 2px solid red;
     }
+    
 
 
         </style>
@@ -78,42 +86,43 @@ margin-left: 0px;
  $(document).ready(function(){
     $('.materialboxed').materialbox();
   });
+
  
          </script>
+
 <!--------------------------------------------- NavBAr---------------------------------------------------------------->
 
   <nav>
-    <div class="nav-wrapper deep-purple darken-3" style="padding-left: 20px;
-            padding-right: 20px;">
-      <a href="#!" class="brand-logo">AMIT</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <div id="nav" class="nav-wrapper white" style="padding-left: 20px;padding-right: 20px;">
+      <a href="#!" class="brand-logo color-primary-dark"><img src="images/indian-flag.png" height="18" width="27" style="vertical-align: middle;margin-bottom: 5px;"> AMIT</a>
+      <a href="#" data-activates="mobile-demo"  class="button-collapse color-primary-dark"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">About</a></li>
-        <li><a href="badges.html">Projects</a></li>
-        <li><a href="collapsible.html">Blog</a></li>
-        <li><a class="tooltipped btn pink" data-position="bottom" data-delay="50" data-tooltip="Download my latest resume." href="docs/Resume.pdf" class="waves-effect waves-light btn pink darken-1">Resume <i class="material-icons right">file_download</i></a></li>
+        <li><a href="sass.html" class="color-primary-dark">About</a></li>
+        <li><a href="badges.html" class="color-primary-dark">Projects</a></li>
+        <li><a href="collapsible.html" class="color-primary-dark">Blog</a></li>
+        <li><a class="tooltipped blue btn" data-position="bottom" data-delay="50" data-tooltip="Download my latest resume." href="docs/Resume.pdf">Resume <i class="material-icons right">file_download</i></a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">About</a></li>
-        <li><a href="badges.html">Projects</a></li>
-        <li><a href="collapsible.html">Blog</a></li>
-        <li><a href="docs/Resume.pdf" class="waves-effect waves-light btn pink darken-1">Resume <i class="material-icons right">file_download</i></a></li>
+        <li><a href="sass.html" class="color-primary-dark">About</a></li>
+        <li><a href="badges.html" class="color-primary-dark">Projects</a></li>
+        <li><a href="collapsible.html" class="color-primary-dark">Blog</a></li>
+        <li><a class="tooltipped btn blue waves-effect waves-light btn blue" data-position="bottom" data-delay="50" data-tooltip="Download my latest resume." href="docs/Resume.pdf">Resume <i class="material-icons right">file_download</i></a></li>
       </ul>
     </div>
   </nav>
 
 <!--------------------------------------------- About---------------------------------------------------------------->
 
-  <div class="deep-purple lighten-4" style="padding:10px;padding-top: 15px;padding-left: 40px; border:0px solid red;margin-bottom: -20px;">
+  <div class="grey lighten-3" style="padding:10px;padding-top: 20px;padding-left: 0px; border:0px solid red;margin-bottom: -20px;">
           <div class="container">
             <div class="row">
-              <div class="col l4 s12">
+              <div class="col l4 s12" style="padding-left: 55px; border: 0px solid red;padding-top: 25px;">
                 <img class="materialboxed" src="images/amit-avtar-2.png" style="border-radius: 50%;">
               </div>
                <div class="row">
-        <div class="col s12 m7" style="padding:0px;">
-          <div class="card deep-purple darken-3">
-            <div class="card-content white-text">
+        <div class="col s12 m7" style="padding:0px; border: 0px solid red;">
+          <div class="card grey lighten-2">
+            <div class="card-content">
               <span class="card-title">Amit Gunjal</span>
               <p class="lightitalic">&nbsp Hello, I completed my graduation from well known Pune University in the discipline of Computer Engineering.</p>
               <p>&nbsp I am passionate about product development in software engineering. I have Training and Certification in Java Technology from Ameerpet, Hyderabad.</p>
@@ -135,9 +144,9 @@ margin-left: 0px;
         </div>
 <!--------------------------------------------- Expand---------------------------------------------------------------->
 
-  <center><button id="godown" class="tooltipped pulse btn-floating btn-large waves-effect waves-light pink"
+  <center><button id="godown" class="tooltipped btn-floating btn-large waves-effect waves-light grey lighten-1"
    onclick="smoothScroll(document.getElementById('portfolio'))" data-position="bottom" data-delay="50" data-tooltip="Go to Portfolio." style="margin-top: -15px;">
-  <i class="material-icons">expand_more</i>  
+  <i class="material-icons" style="color: black;">expand_more</i>  
   </button>
 </center>  
 <!--------------------------------------------- Parallax---------------------------------------------------------------->
@@ -147,17 +156,17 @@ margin-left: 0px;
   </div>
 <!--------------------------------------------- Portfolio---------------------------------------------------------------->
 
-   <div id="portfolio" class="row" onmouseover="">
-   <button class="deep-purple flow-text white-text btn-large" style="width: 100%;">Portfolio</button>
- <ul id="tabs-swipe-demo" class="tabs deep-purple" style="">
-    <li class="tab col s3"><a class="active white-text" href="#test-swipe-1">Education</a></li>
-    <li class="tab col s3"><a class="white-text" href="#test-swipe-2">Skills</a></li>
-    <li class="tab col s3"><a class="white-text" href="#test-swipe-3">Honors and Achievements</ABBR></a></li>
+   <div id="portfolio" class="row">
+   <button class="grey lighten-2 btn-large black-text" style="width: 100%;">Portfolio</button>
+ <ul id="tabs-swipe-demo" class="tabs grey lighten-2" style="padding-left: 12px;">
+    <li class="tab col s3"><a class="active black-text" href="#test-swipe-1">Education</a></li>
+    <li class="tab col s3"><a class="black-text" href="#test-swipe-2">Skills</a></li>
+    <li class="tab col s3"><a class="black-text" href="#test-swipe-3">Achievements</ABBR></a></li>
   </ul>
   <!--------------------------------------------- Education---------------------------------------------------------------->
 
   <div id="test-swipe-1" class="col s12">
-    <div class="card section deep-purple lighten-4" style="padding-left: 20px;padding-right: 20px;margin-top: 0px;margin-bottom: 0px;">
+    <div class="card section grey lighten-3" style="padding-left: 20px;padding-right: 20px;margin-top: 0px;margin-bottom: 0px;">
  
     <div class="row"> 
     <h5 class="flow-text">Bachelor of Computer Engineering (B. E.)</h5>
@@ -193,86 +202,54 @@ margin-left: 0px;
 <!--------------------------------------------- Skills---------------------------------------------------------------->
   
   <div id="test-swipe-2" class="col s12">
-      <div class="card section deep-purple lighten-4" style="padding-left: 20px;padding-right: 20px;margin-top: 0px;margin-bottom: 0px;">
+      <div class="card section grey lighten-3" style="padding-left: 20px;padding-right: 20px;margin-top: 0px;margin-bottom: 0px;">
  
     <div class="row"> 
     <h5 class="flow-text"><i class="medium material-icons"  style="vertical-align: middle;margin-bottom: 5px;">code</i>  Technical Skills</h5>
-    <a class="waves-effect waves-light pink darken-2 btn">Java</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">OOPS</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">C++</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">Python 3</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">HTML5</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">GitHub</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">JavaScript</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">Angular</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">MySQL</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">Linux</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">SQL</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2 disabled">C# .NET</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2 disabled">PHP</a>
+<a class="waves-effect waves-light grey lighten-1 btn" style="color: black;">Java</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">OOPS</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">C++</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">C++</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Python 3</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">HTML5</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">GitHub</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">JavaScript</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Angular</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">MySQL</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Linux</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">SQL</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1  style="color: black;" disabled">C# .NET</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1  style="color: black;" disabled">PHP</a>
 
   <h5 class="flow-text"><i class="medium material-icons"  style="vertical-align: middle;margin-bottom: 5px;">person</i>  Personal Skills</h5>
-    <a class="waves-effect waves-light btn pink darken-2">Labour</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">Leadership</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">Rigour</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">Personal Integrity</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">Positive Work Ethic</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">Flexible</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn pink darken-2">Team Oriented</a>
-<a class="waves-effect waves-light btn pink darken-2">Creative</a>&nbsp &nbsp &nbsp
+    <a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Labour</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Leadership</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Rigour</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Personal Integrity</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Positive Work Ethic</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Flexible</a>&nbsp &nbsp &nbsp
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Team Oriented</a>
+<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Creative</a>&nbsp &nbsp &nbsp
 </div>
   </div>
 </div>
   <!------------------------------------------------------------------ Honors and Awards-------------------------------------->
   <div id="test-swipe-3" class="col s12">
-<div class="card section deep-purple lighten-4" style="padding-left: 20px;padding-right: 20px;margin-top: 0px;margin-bottom: 0px;">
- 
-    <div class="row"> 
-    <h5 class="flow-text">Bachelor of Computer Engineering (B. E.)</h5>
-      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Savitribai Phule Pune University</div>
-      <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">event</i>  June, 2013 - June, 2017</div>
-      <div class="col s6"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">location_on</i>  Amrutvahini College of Engineering, Sangamner 422605</div>
-      <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">trending_up
-</i>  62.34 %</div>
-</div>
-<div class="card-action"></div>
-
-   <div class="row">
-    <h5 class="flow-text">Higher Secondary School Certificate (H. S. C.)</h5>
-      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Maharashtra State Board</div>
-      <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">event</i>  June, 2011 - June, 2013</div>
-      <div class="col s6"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">location_on</i>  Amrutvahini College of Engineering, Sangamner 422605</div>
-      <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">trending_up
-</i>  70.00 %</div>
-</div>
-<div class="card-action"></div>
-
-   <div class="row">
-    <h5 class="flow-text">Secondary School Certificate (S. S. C.)</h5>
-      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Maharashtra State Board</div>
-      <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">event</i>  June, 2010 - June, 2011</div>
-      <div class="col s6"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">location_on</i>  Amrutvahini College of Engineering, Sangamner 422605</div>
-      <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">trending_up
-</i>  83.64 %</div>
-</div>
-</div>
-  </div>
-        </div>
 
 </div>
 
-
+</div>
 
 <!--------------------------------------------- Git---------------------------------------------------------------->
 
    
   <!-- Element Showed -->
   <a href="http://github.com/amitgunjal/" id="menu" class="waves-effect waves-light" style="position: fixed;bottom:40px;right: 40px;">
-    <img class="tooltipped" data-position="left" data-delay="50" data-tooltip="View my work on GitHub." src="images/github-circle.png" height="64" width="64" style="background-color: white;border-radius: 50%;border: 3px solid white;">
+    <img class="tooltipped" data-position="left" data-delay="50" data-tooltip="View my work on GitHub." src="images/github.png" height="64" width="64">
   </a>
 
   <!-- Tap Target Structure -->
-  <div class="tap-target white-text pink darken-1" data-activates="menu">
+  <div class="tap-target black-text grey lighten-1" data-activates="menu">
     <div class="tap-target-content">
       <h5>Hello,</h5>
       <p>Click here to follow on GitHub.</p>
@@ -285,31 +262,35 @@ margin-left: 0px;
 
 <!--------------------------------------------- Footer---------------------------------------------------------------->
 
-        <footer class="page-footer deep-purple darken-1">
+        <footer class="page-footer blue-grey darken-3">
           <div class="container">
-            <div class="row">
+            <div id="nav" class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Amit Gunjal</h5>
-                <p class="grey-text text-lighten-4">Head up, stay strong.. Fake a smile, move on.</p>
+                <h5 class="color-primary-dark">Amit Gunjal</h5>
+                <p class="color-primary-dark">Head up, stay strong.. Fake a smile, move on.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Join me</h5>
+                <h5 class="color-primary-dark">Join me</h5>
                 <ul>
                 <!--  <li><img src="images/git.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
                   <a class="grey-text text-lighten-3" href="#!">GitHub</a></li> -->
                   <li><img src="images/twitter.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
-                  <a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+                  <a class="color-primary-dark" href="#!">Twitter</a></li>
                  <!-- <li><img src="images/linkedin.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
                   <a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>-->
                   <li><img src="images/facebook.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
-                  <a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                  <a class="color-primary-dark" href="#!">Facebook</a></li>
+                  <li><img src="images/instagram.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
+                  <a class="color-primary-dark" href="#!">Instgram</a></li>
+                  
+
                 </ul>
               </div>
             </div>
           </div>
-          <div class="footer-copyright deep-purple darken-3">
+          <div id="nav" class="footer-copyright  blue-grey darken-4">
             <div class="container">
-            <a class="grey-text text-lighten-4 right" href="#!"> &copy 2017 All Rights Reserved.</a>
+            <a class="color-primary-dark right" href="#!"> &copy 2017 All Rights Reserved.</a>
             </div>
           </div>
         </footer>
