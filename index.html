@@ -18,11 +18,15 @@ margin-left: 0px;
            .parallax-container {
       height: 300px;
     }
-    #fixedbutton {
-    position: fixed;
-    bottom: 0px;
-    right: 0px; 
-}
+    .git-logo:hover{
+      height: 72px;
+      width: 72px;
+      display: block;
+      padding: 10px;
+      border: 2px solid red;
+    }
+
+
         </style>
 <!--------------------------------------------- Body-------------------------------------------------------------->
 
@@ -74,6 +78,7 @@ margin-left: 0px;
  $(document).ready(function(){
     $('.materialboxed').materialbox();
   });
+ 
          </script>
 <!--------------------------------------------- NavBAr---------------------------------------------------------------->
 
@@ -86,7 +91,7 @@ margin-left: 0px;
         <li><a href="sass.html">About</a></li>
         <li><a href="badges.html">Projects</a></li>
         <li><a href="collapsible.html">Blog</a></li>
-        <li><a href="docs/Resume.pdf" class="waves-effect waves-light btn pink darken-1">Resume <i class="material-icons right">file_download</i></a></li>
+        <li><a class="tooltipped btn pink" data-position="bottom" data-delay="50" data-tooltip="Download my latest resume." href="docs/Resume.pdf" class="waves-effect waves-light btn pink darken-1">Resume <i class="material-icons right">file_download</i></a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="sass.html">About</a></li>
@@ -103,7 +108,7 @@ margin-left: 0px;
           <div class="container">
             <div class="row">
               <div class="col l4 s12">
-                <img class="materialboxed" src="images/amit-1.png" style="border-radius: 50%;">
+                <img class="materialboxed" src="images/amit-avtar-2.png" style="border-radius: 50%;">
               </div>
                <div class="row">
         <div class="col s12 m7" style="padding:0px;">
@@ -166,7 +171,7 @@ margin-left: 0px;
 
    <div class="row">
     <h5 class="flow-text">Higher Secondary School Certificate (H. S. C.)</h5>
-      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Mahatrashtra State Board</div>
+      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Maharashtra State Board</div>
       <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">event</i>  June, 2011 - June, 2013</div>
       <div class="col s6"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">location_on</i>  Amrutvahini College of Engineering, Sangamner 422605</div>
       <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">trending_up
@@ -176,7 +181,7 @@ margin-left: 0px;
 
    <div class="row">
     <h5 class="flow-text">Secondary School Certificate (S. S. C.)</h5>
-      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Mahatrashtra State Board</div>
+      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Maharashtra State Board</div>
       <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">event</i>  June, 2010 - June, 2011</div>
       <div class="col s6"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">location_on</i>  Amrutvahini College of Engineering, Sangamner 422605</div>
       <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">trending_up
@@ -234,7 +239,7 @@ margin-left: 0px;
 
    <div class="row">
     <h5 class="flow-text">Higher Secondary School Certificate (H. S. C.)</h5>
-      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Mahatrashtra State Board</div>
+      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Maharashtra State Board</div>
       <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">event</i>  June, 2011 - June, 2013</div>
       <div class="col s6"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">location_on</i>  Amrutvahini College of Engineering, Sangamner 422605</div>
       <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">trending_up
@@ -244,7 +249,7 @@ margin-left: 0px;
 
    <div class="row">
     <h5 class="flow-text">Secondary School Certificate (S. S. C.)</h5>
-      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Mahatrashtra State Board</div>
+      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Maharashtra State Board</div>
       <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">event</i>  June, 2010 - June, 2011</div>
       <div class="col s6"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">location_on</i>  Amrutvahini College of Engineering, Sangamner 422605</div>
       <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">trending_up
@@ -260,10 +265,10 @@ margin-left: 0px;
 
 <!--------------------------------------------- Git---------------------------------------------------------------->
 
-          
+   
   <!-- Element Showed -->
   <a href="http://github.com/amitgunjal/" id="menu" class="waves-effect waves-light" style="position: fixed;bottom:40px;right: 40px;">
-    <img src="images/github-circle.png" height="64" width="64">
+    <img class="tooltipped" data-position="left" data-delay="50" data-tooltip="View my work on GitHub." src="images/github-circle.png" height="64" width="64" style="background-color: white;border-radius: 50%;border: 3px solid white;">
   </a>
 
   <!-- Tap Target Structure -->
@@ -275,7 +280,6 @@ margin-left: 0px;
       </p>
     </div>
   </div>
-          
 
 
 
@@ -289,14 +293,14 @@ margin-left: 0px;
                 <p class="grey-text text-lighten-4">Head up, stay strong.. Fake a smile, move on.</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Follow me on</h5>
+                <h5 class="white-text">Join me</h5>
                 <ul>
-                  <li><img src="images/git.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
-                  <a class="grey-text text-lighten-3" href="#!">GitHub</a></li>
+                <!--  <li><img src="images/git.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
+                  <a class="grey-text text-lighten-3" href="#!">GitHub</a></li> -->
                   <li><img src="images/twitter.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
                   <a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
-                  <li><img src="images/linkedin.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
-                  <a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+                 <!-- <li><img src="images/linkedin.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
+                  <a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>-->
                   <li><img src="images/facebook.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
                   <a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
                 </ul>
