@@ -87,6 +87,9 @@ background-color: #fff;
     $('.materialboxed').materialbox();
   });
 
+ $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
  
          </script>
 
@@ -113,35 +116,40 @@ background-color: #fff;
 
 <!--------------------------------------------- About---------------------------------------------------------------->
 
-  <div class="grey lighten-3" style="padding:10px;padding-top: 20px;padding-left: 0px; border:0px solid red;margin-bottom: -20px;">
-          <div class="container">
-            <div class="row">
-              <div class="col l4 s12" style="padding-left: 55px; border: 0px solid red;padding-top: 25px;">
-                <img class="materialboxed" src="images/amit-avtar-2.png" style="border-radius: 50%;">
-              </div>
-               <div class="row">
-        <div class="col s12 m7" style="padding:0px; border: 0px solid red;">
-          <div class="card hoverable grey lighten-2">
+ 
+<div class="row">
+    <div class="col s16 m16 l6">
+        <div class="card hoverable">
+            
+            <div class="card-content right">
+                    <img class="materialboxed" src="images/amit-avtar-2.png" style="border-radius: 50%;">
+            </div>
+        </div>
+    </div>
+    <div class="col s16 m16 l6">
+        <div class="card hoverable">
             <div class="card-content">
-              <span class="card-title">Amit Gunjal</span>
-              <p class="lightitalic">&nbsp Hello, I completed my graduation from well known Pune University in the discipline of Computer Engineering.</p>
+                <span class="card-title black-text">Amit Gunjal</span>
+              &nbsp Hello, I completed my graduation from well known Pune University in the discipline of Computer Engineering.</p>
               <p>&nbsp I am passionate about product development in software engineering. I have Training and Certification in Java Technology from Ameerpet, Hyderabad.</p>
               <p>&nbsp Also, I have hands on experience in Responsive Web Develpment using popular web frameworks.</p>
+    selecting the most optimal path in the map. It also implements the Messaging API to notify customers.<br>
             </div>
             <div class="card-action">
-                  <img src="images/in.png" height="40" width="40" style="vertical-align: middle;margin-bottom: 5px;">&nbsp &nbsp 
+                <img src="images/in.png" height="40" width="40" style="vertical-align: middle;margin-bottom: 5px;">&nbsp &nbsp 
                   <img src="images/skype.png" height="40" width="40" style="vertical-align: middle;margin-bottom: 5px;">&nbsp &nbsp
                   <img src="images/quora.png" height="40" width="40" style="vertical-align: middle;margin-bottom: 5px;">&nbsp &nbsp 
                   <img src="images/gmail.png" height="40" width="40" style="vertical-align: middle;margin-bottom: 5px;">&nbsp &nbsp
                   <img src="images/wordpress.png" height="40" width="40" style="vertical-align: middle;margin-bottom: 5px;">
 
-                  </div>
-          </div>
-        </div>
-      </div>
             </div>
-          </div>
         </div>
+    </div>
+
+</div>
+
+
+
 <!--------------------------------------------- Expand---------------------------------------------------------------->
 
   <center><button id="godown" class="tooltipped btn-floating btn-large waves-effect waves-light blue"
@@ -151,8 +159,8 @@ background-color: #fff;
 </center>  
 <!--------------------------------------------- Parallax---------------------------------------------------------------->
 
- <div class="parallax-container" style="margin-top: -27px;">
-    <div class="parallax"><img src="images/rain.jpg"></div>
+ <div class="parallax-container" style="margin-top: -27px;height: 400px;" >
+    <div class="parallax"><img src="images/business.jpg"></div>
   </div>
 <!--------------------------------------------- Portfolio---------------------------------------------------------------->
 
@@ -161,7 +169,7 @@ background-color: #fff;
  <ul id="tabs-swipe-demo" class="tabs grey lighten-2" style="padding-left: 12px;">
     <li class="tab col s3"><a class="active black-text" href="#test-swipe-1">Education</a></li>
     <li class="tab col s3"><a class="black-text" href="#test-swipe-2">Skills</a></li>
-    <li class="tab col s3"><a class="black-text" href="#test-swipe-3">Achievements</ABBR></a></li>
+    <li class="tab col s3"><a class="black-text" href="#test-swipe-3">Honors</ABBR></a></li>
   </ul>
   <!--------------------------------------------- Education---------------------------------------------------------------->
 
@@ -234,31 +242,31 @@ background-color: #fff;
 </div>
   <!------------------------------------------------------------------ Honors and Awards-------------------------------------->
   <div id="test-swipe-3" class="col s12">
-
+  <ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">stars</i>Smart India Hackathon 2017</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">mode_edit</i>Published paper on Natural Language Processing
+      with 7% similarity index.</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">monetization_on</i>Received scholorship from State Government
+      each year of Engineering under TFWS.</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">local_activity</i>Local Guide at Google. </div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+        
 </div>
 
 </div>
-<!--                      -->
-<center>
- <div class="row">
-        <div class="col s12 m6">
-          <div class="card hoverable blue-grey darken-1">
-            <div class="card-content white-text">
-              <span class="card-title">Water discharges from Dam in Slo-Motion.</span>
-              <iframe src="https://youtu.be/lRJa6bM8JFQ"
-   width="560" height="315" frameborder="0" allowfullscreen></iframe>
-    </video>
-            </div>
-            <div class="card-action">
-              <a href="https://youtu.be/lRJa6bM8JFQ">    <i style="vertical-align: middle;border-bottom: 0px;" class="material-icons">videocam</i>
-              Watch on YouTube</a>
-            </div>
-          </div>
-        </div>
-      </div>
-            
-</center>
-    
+
 
 
 <!--------------------------------------------- Git---------------------------------------------------------------->
