@@ -13,7 +13,7 @@
 - Clone this repo to your local machine using `https://https://github.com/amitgunjal/sphbintegration.git`
 
 ### Setup
-> Following are the steps for first checkout and making contribution to this project
+> Following are the steps for first checkout.
 ```shell
 $ git init
 $ git remote add origin https://github.com/amitgunjal/sphbintegration.git
