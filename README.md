@@ -1,27 +1,19 @@
 
 <!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
-***INSERT GRAPHIC HERE (include hyperlink in image)***
-
 # sphbintegration
 
 > Dynamic web project
 
 ## Installation
 
-- All the `code` required to get started
-- Images of what it should look like
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
+- Clone this repo to your local machine using `https://https://github.com/amitgunjal/sphbintegration.git`
 
 ### Setup
-
-- If you want more syntax highlighting, format your code like this:
-
-> update and install this package first
-
+> Following are the steps for first checkout and making contribution to this project
 ```shell
 $ git init
 $ git remote add origin https://github.com/amitgunjal/sphbintegration.git
@@ -36,8 +28,8 @@ $ git checkout your_branch_name
 - **How do I do contribute?**
     - Fork the project
     - Create your own branch
-    - Commit changes after your work is done
-    - Create a Pull Request here
+    - Commit changes
+    - Create a Pull Request
 
 ---
 
