@@ -1,7 +1,7 @@
 
 <!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
 
-# sphbintegration
+# Unnamed Project
 
 > Dynamic web project
 
@@ -25,8 +25,8 @@ $ git checkout your_branch_name
 
 ## FAQ
 
-- **How do I do contribute?**
-    - Fork the project
+- **How do I contribute?**
+    - Take Git clone or Pull this repo
     - Create your own branch
     - Commit changes
     - Create a Pull Request
@@ -37,7 +37,7 @@ $ git checkout your_branch_name
 
 Reach out to me at one of the following places!
 
-- Email at <a href="mailto:amitgunjal26@gmail.com" target="_blank">`amitgunjal26@gmail.com`</a>
+- Email at <a href="http://mailto:amitgunjal26@gmail.com" target="_blank">`amitgunjal26@gmail.com`</a>
 - Twitter at <a href="http://twitter.com/_amitgunjal" target="_blank">`@amitgunjal`</a>
 ---
 ## License
