@@ -1,0 +1,4 @@
+# Creating Database
+#Amit Gunjal 23 Sept 2018
+CREATE DATABASE IF NOT EXISTS learn;
+USE learn;
