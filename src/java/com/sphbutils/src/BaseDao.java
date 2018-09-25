@@ -11,7 +11,7 @@ import org.hibernate.Session;
 
 /**
  *
- * @author krawler
+ * @author Amit Gunjal
  */
 public class BaseDao {
 

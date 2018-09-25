@@ -7,17 +7,15 @@ package com.mvc.dao;
 
 import com.mvc.beans.Userlogin;
 import com.sphbutils.src.BaseDao;
-import com.util.src.HibernateUtil;
 import java.util.List;
-import org.hibernate.Query;
-import org.hibernate.Session;
 
 /**
  *
- * @author krawler
+ * @author Amit Gunjal
  */
 public class UserLoginDao extends BaseDao {
 
+    @SuppressWarnings("unchecked")
     public static List<Userlogin> userList() {
         List<Userlogin> list = null;
         try {
