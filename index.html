@@ -1,329 +1,306 @@
+<!DOCTYPE html>
+<html>
 
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
-        <style type="text/css">
-          html{
-margin-right:0px;
-margin-left: 0px;
-background-color: #fff;
-          }
-      #nav .color-primary-dark{
-        color: #2196f3;
-      }
-      #nav .color-primary-dark-back a{
-        background-color: #2196f3;
-      }
-      .parallax-container {
-      height: 300px;
-      }
-    .git-logo:hover{
-      height: 72px;
-      width: 72px;
-      display: block;
-      padding: 10px;
-      border: 2px solid red;
-    }
-    
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<style type="text/css">
+  html {
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: #fff;
+  }
 
+  #nav .color-primary-dark {
+    color: #2196f3;
+  }
 
-        </style>
+  #nav .color-primary-dark-back a {
+    background-color: #2196f3;
+  }
+
+  .parallax-container {
+    height: 300px;
+  }
+
+  .git-logo:hover {
+    height: 72px;
+    width: 72px;
+    display: block;
+    padding: 10px;
+    border: 2px solid red;
+  }
+</style>
 <!--------------------------------------------- Body-------------------------------------------------------------->
 
-    <body onload="$('.tap-target').tapTarget('open')">
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript">
+<body onload="$('.tap-target').tapTarget('open')">
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript">
 
-  $( document ).ready(function(){
-  $(".button-collapse").sideNav();
-  })   
+    $(document).ready(function () {
+      $(".button-collapse").sideNav();
+    })
 
-  $(document).ready(function(){
-  $('.parallax').parallax();
-  });
+    $(document).ready(function () {
+      $('.parallax').parallax();
+    });
 
-  $('.tap-target').tapTarget('open');
-  $('.tap-target').tapTarget('close');
-  
-  $('#godown').click(function() {
-   //optionally remove the 500 (which is time in milliseconds) of the
-   //scrolling animation to remove the animation and make it instant
-   $.scrollTo($('#portfolio'), 500);
-});
+    $('.tap-target').tapTarget('open');
+    $('.tap-target').tapTarget('close');
 
-  window.smoothScroll = function(target) {
-    var scrollContainer = target;
-    do { //find scroll container
+    $('#godown').click(function () {
+      //optionally remove the 500 (which is time in milliseconds) of the
+      //scrolling animation to remove the animation and make it instant
+      $.scrollTo($('#portfolio'), 500);
+    });
+
+    window.smoothScroll = function (target) {
+      var scrollContainer = target;
+      do { //find scroll container
         scrollContainer = scrollContainer.parentNode;
         if (!scrollContainer) return;
         scrollContainer.scrollTop += 1;
-    } while (scrollContainer.scrollTop == 0);
+      } while (scrollContainer.scrollTop == 0);
 
-    var targetY = 0;
-    do { //find the top of target relatively to the container
+      var targetY = 0;
+      do { //find the top of target relatively to the container
         if (target == scrollContainer) break;
         targetY += target.offsetTop;
-    } while (target = target.offsetParent);
+      } while (target = target.offsetParent);
 
-    scroll = function(c, a, b, i) {
+      scroll = function (c, a, b, i) {
         i++; if (i > 30) return;
         c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+        setTimeout(function () { scroll(c, a, b, i); }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
     }
-    // start scrolling
-    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-}
- $(document).ready(function(){
-    $('.materialboxed').materialbox();
-  });
+    $(document).ready(function () {
+      $('.materialboxed').materialbox();
+    });
 
- $(document).ready(function(){
-    $('.collapsible').collapsible();
-  });
- 
-         </script>
+    $(document).ready(function () {
+      $('.collapsible').collapsible();
+    });
 
-<!--------------------------------------------- NavBAr---------------------------------------------------------------->
+  </script>
+
+  <!--------------------------------------------- NavBAr---------------------------------------------------------------->
 
   <nav>
     <div id="nav" class="nav-wrapper white" style="padding-left: 20px;padding-right: 20px;">
-      <a href="http://amitgunjal.github.io/" class="brand-logo color-primary-dark"><img src="images/indian-flag.png" height="18" width="27" style="vertical-align: middle;margin-bottom: 5px;"> AMIT</a>
-      <a href="#" data-activates="mobile-demo"  class="button-collapse color-primary-dark"><i class="material-icons">menu</i></a>
+      <a href="http://amitgunjal.github.io/" class="brand-logo"
+        style="font-family: Arial, sans-serif; font-size: 20px; color: #2c3e50; text-decoration: none; display: inline-flex; align-items: center; border-radius: 5px; transition: background-color 0.3s ease;">
+        <img src="images/indian-flag.png" height="18" width="27"
+          style="vertical-align: middle; margin-right: 8px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);">
+        <span style="font-weight: bold; color: #2980b9;">AMIT GUNJAL</span>
+      </a>
+
+      <a href="#" data-activates="mobile-demo" class="button-collapse color-primary-dark"><i
+          class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html" class="color-primary-dark">About</a></li>
+        <li><a href="about.html" class="color-primary-dark">About</a></li>
         <li><a href="projects.html" class="color-primary-dark">Projects</a></li>
-        <li><a href="collapsible.html" class="color-primary-dark">Blog</a></li>
-        <li><a class="tooltipped blue btn" data-position="bottom" data-delay="50" data-tooltip="Download my latest resume." href="docs/Resume.pdf">Resume <i class="material-icons right">file_download</i></a></li>
+        <!-- <li><a href="collapsible.html" class="color-primary-dark">Blog</a></li> -->
+        <li><a class="tooltipped blue btn" data-position="bottom" data-delay="50" data-tooltip="Click to download"
+            href="docs/Resume.pdf">Resume <i class="material-icons right">file_download</i></a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html" class="color-primary-dark">About</a></li>
+        <li><a href="about.html" class="color-primary-dark">About</a></li>
         <li><a href="projects.html" class="color-primary-dark">Projects</a></li>
-        <li><a href="collapsible.html" class="color-primary-dark">Blog</a></li>
-        <li><a class="tooltipped btn blue waves-effect waves-light btn blue" data-position="bottom" data-delay="50" data-tooltip="Download my latest resume." href="docs/Resume.pdf">Resume <i class="material-icons right">file_download</i></a></li>
+        <!-- <li><a href="collapsible.html" class="color-primary-dark">Blog</a></li> -->
+        <li><a class="tooltipped btn blue waves-effect waves-light btn blue" data-position="bottom" data-delay="50"
+            data-tooltip="Click to download" href="docs/Resume.pdf">Resume <i
+              class="material-icons right">file_download</i></a></li>
       </ul>
     </div>
   </nav>
 
-<!--------------------------------------------- About---------------------------------------------------------------->
+  <!--------------------------------------------- About---------------------------------------------------------------->
 
- 
-<div class="row">
+
+  <div class="row">
     <div class="col s16 m16 l6">
-        <div class="card hoverable">
-            
-            <div class="card-content right">
-                    <img class="materialboxed" src="images/amit-avtar-2.png" style="border-radius: 50%;">
-            </div>
+      <div class="card hoverable">
+        <div class="card-content right">
+          <img class="materialboxed" src="images/amit-avtar-2.png"
+            style="border-radius: 50%; width: 250px; height: 250px;">
         </div>
+      </div>
     </div>
-    <div class="col s16 m16 l6">
-        <div class="card hoverable">
-            <div class="card-content">
-                <span class="card-title black-text">Amit Gunjal</span>
-              &nbsp Hello, I completed my graduation from well known Pune University in the discipline of Computer Engineering.</p>
-              <p>&nbsp I am passionate about product development in software engineering. I have Training and Certification in Java Technology from Ameerpet, Hyderabad.</p>
-              <p>&nbsp Also, I have hands on experience in Responsive Web Develpment using popular web frameworks.</p>
-    selecting the most optimal path in the map. It also implements the Messaging API to notify customers.<br>
-            </div>
-            <div class="card-action">
-                <img src="images/in.png" height="40" width="40" style="vertical-align: middle;margin-bottom: 5px;">&nbsp &nbsp 
-                  <img src="images/skype.png" height="40" width="40" style="vertical-align: middle;margin-bottom: 5px;">&nbsp &nbsp
-                  <img src="images/quora.png" height="40" width="40" style="vertical-align: middle;margin-bottom: 5px;">&nbsp &nbsp 
-                  <img src="images/gmail.png" height="40" width="40" style="vertical-align: middle;margin-bottom: 5px;">&nbsp &nbsp
-                  <img src="images/wordpress.png" height="40" width="40" style="vertical-align: middle;margin-bottom: 5px;">
-
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-
-<!--------------------------------------------- Expand---------------------------------------------------------------->
-
-  <center><button id="godown" class="tooltipped btn-floating btn-large waves-effect waves-light blue"
-   onclick="smoothScroll(document.getElementById('portfolio'))" data-position="bottom" data-delay="50" data-tooltip="Go to Portfolio." style="margin-top: -15px;">
-  <i class="material-icons" style="color: white;">expand_more</i>  
-  </button>
-</center>  
-<!--------------------------------------------- Parallax---------------------------------------------------------------->
-
- <div class="parallax-container" style="margin-top: -27px;height: 400px;" >
-    <div class="parallax"><img src="images/business.jpg"></div>
-  </div>
-<!--------------------------------------------- Portfolio---------------------------------------------------------------->
-
-   <div id="portfolio" class="row">
-   <button class="grey lighten-2 btn-large black-text" style="width: 100%;">Portfolio</button>
- <ul id="tabs-swipe-demo" class="tabs grey lighten-2" style="padding-left: 12px;">
-    <li class="tab col s3"><a class="active black-text" href="#test-swipe-1">Education</a></li>
-    <li class="tab col s3"><a class="black-text" href="#test-swipe-2">Skills</a></li>
-    <li class="tab col s3"><a class="black-text" href="#test-swipe-3">Honors</ABBR></a></li>
-  </ul>
-  <!--------------------------------------------- Education---------------------------------------------------------------->
-
-  <div id="test-swipe-1" class="col s12">
-    <div class="card section grey lighten-3" style="padding-left: 20px;padding-right: 20px;margin-top: 0px;margin-bottom: 0px;">
- 
-    <div class="row"> 
-    <h5 class="flow-text">Bachelor of Computer Engineering (B. E.)</h5>
-      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Savitribai Phule Pune University</div>
-      <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">event</i>  June, 2013 - June, 2017</div>
-      <div class="col s6"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">location_on</i>  Amrutvahini College of Engineering, Sangamner 422605</div>
-      <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">trending_up
-</i>  62.34 %</div>
-</div>
-<div class="card-action"></div>
-
-   <div class="row">
-    <h5 class="flow-text">Higher Secondary School Certificate (H. S. C.)</h5>
-      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Maharashtra State Board</div>
-      <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">event</i>  June, 2011 - June, 2013</div>
-      <div class="col s6"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">location_on</i>  Amrutvahini College of Engineering, Sangamner 422605</div>
-      <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">trending_up
-</i>  70.00 %</div>
-</div>
-<div class="card-action"></div>
-
-   <div class="row">
-    <h5 class="flow-text">Secondary School Certificate (S. S. C.)</h5>
-      <div class="col s6">      <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>  Maharashtra State Board</div>
-      <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">event</i>  June, 2010 - June, 2011</div>
-      <div class="col s6"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">location_on</i>  Amrutvahini College of Engineering, Sangamner 422605</div>
-      <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">trending_up
-</i>  83.64 %</div>
-</div>
-</div>
-  </div>
-
-<!--------------------------------------------- Skills---------------------------------------------------------------->
-  
-  <div id="test-swipe-2" class="col s12">
-      <div class="card section grey lighten-3" style="padding-left: 20px;padding-right: 20px;margin-top: 0px;margin-bottom: 0px;">
- 
-    <div class="row"> 
-    <h5 class="flow-text"><i class="medium material-icons"  style="vertical-align: middle;margin-bottom: 5px;">code</i>  Technical Skills</h5>
-<a class="waves-effect waves-light grey lighten-1 btn" style="color: black;">Java</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">OOPS</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">C++</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Python 3</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">HTML5</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">GitHub</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">JavaScript</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Angular</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">MySQL</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Linux</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">SQL</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1  style="color: black;" disabled">C# .NET</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1  style="color: black;" disabled">PHP</a>
-
-  <h5 class="flow-text"><i class="medium material-icons"  style="vertical-align: middle;margin-bottom: 5px;">person</i>  Personal Skills</h5>
-    <a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Labour</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Leadership</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Rigour</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Personal Integrity</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Positive Work Ethic</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Flexible</a>&nbsp &nbsp &nbsp
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Team Oriented</a>
-<a class="waves-effect waves-light btn grey lighten-1" style="color: black;">Creative</a>&nbsp &nbsp &nbsp
-</div>
-  </div>
-</div>
-  <!------------------------------------------------------------------ Honors and Awards-------------------------------------->
-  <div id="test-swipe-3" class="col s12">
-  <ul class="collapsible popout" data-collapsible="accordion">
-    <li>
-      <div class="collapsible-header"><i class="material-icons">stars</i>Smart India Hackathon 2017</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">mode_edit</i>Published paper on Natural Language Processing
-      with 7% similarity index.</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">monetization_on</i>Received scholorship from State Government
-      each year of Engineering under TFWS.</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">local_activity</i>Local Guide at Google. </div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-  </ul>
-        
-</div>
-
-</div>
-
-
-
-<!--------------------------------------------- Git---------------------------------------------------------------->
-
-   
-  <!-- Element Showed -->
-  <a href="http://github.com/amitgunjal/" id="menu" class="waves-effect waves-light" style="position: fixed;bottom:40px;right: 40px;">
-    <img class="tooltipped" data-position="left" data-delay="50" data-tooltip="View my work on GitHub." src="images/github.png" height="64" width="64">
-  </a>
-
-  <!-- Tap Target Structure -->
-  <div class="tap-target black-text grey lighten-1" data-activates="menu">
-    <div class="tap-target-content">
-      <h5>Hello,</h5>
-      <p>Click here to follow on GitHub.</p>
-      <p>Star, Fork, Contribute.
+    <div class="col s16 m16 l6" style="margin-top: 10px;">
+      <h5
+        style="font-size: 4rem; font-weight: bold; color: #2c3e50; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); margin-bottom: 0.5rem;">
+        नमस्ते,</h5>
+      <p
+        style="font-family: 'Georgia', serif; font-size: 1.2em; line-height: 1.8; color: #333; text-align: justify; margin: 20px 0; background: #f9f9f9; padding: 15px; border-left: 4px solid #0077b5; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        I am a passionate <strong style="color: #0077b5;">Software Engineer</strong> with a Bachelor's degree in
+        Computer Engineering from <span style="color: #555; font-weight: bold;">Pune University</span>. With over
+        <strong>6 years of experience</strong> in <span style="color: #0077b5;">Java 8</span>, <em>Microservices</em>,
+        and <em>Agile methodologies</em>, I specialize in building <strong style="color: #0077b5;">scalable</strong>,
+        <strong>high-performance solutions</strong> using RESTful APIs and SQL/NoSQL databases. I also have hands-on
+        expertise in <em>responsive web development</em> and <strong style="color: #0077b5;">LLM integration</strong>.
+        Eager to leverage my skills in product development and contribute to impactful projects.
       </p>
     </div>
-  </div>
 
 
 
-<!--------------------------------------------- Footer---------------------------------------------------------------->
+    <!--------------------------------------------- Expand---------------------------------------------------------------->
 
-        <footer class="page-footer blue-grey darken-3">
-          <div class="container">
-            <div id="nav" class="row">
-              <div class="col l6 s12">
-                <h5 class="color-primary-dark">Amit Gunjal</h5>
-                <p class="color-primary-dark">Head up, stay strong.. Fake a smile, move on.</p>
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="color-primary-dark">Join me</h5>
-                <ul>
-                <!--  <li><img src="images/git.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
-                  <a class="grey-text text-lighten-3" href="#!">GitHub</a></li> -->
-                  <li><img src="images/twitter.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
-                  <a class="color-primary-dark" href="#!">Twitter</a></li>
-                 <!-- <li><img src="images/linkedin.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
-                  <a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>-->
-                  <li><img src="images/facebook.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
-                  <a class="color-primary-dark" href="#!">Facebook</a></li>
-                  <li><img src="images/instagram.png" height="32" width="32" style="vertical-align: middle;margin-bottom: 5px;">
-                  <a class="color-primary-dark" href="#!">Instgram</a></li>
-                  
+    <center><button id="godown" class="tooltipped btn-floating btn-large waves-effect waves-light blue"
+        onclick="smoothScroll(document.getElementById('portfolio'))" data-position="bottom" data-delay="50"
+        data-tooltip="Go to Portfolio." style="margin-top: -15px;">
+        <i class="material-icons" style="color: white;">expand_more</i>
+      </button>
+    </center>
+    <!--------------------------------------------- Parallax---------------------------------------------------------------->
 
-                </ul>
-              </div>
-            </div>
+    <div class="parallax-container" style="height: 400px;">
+      <div class="parallax"><img src="images/business.jpg"></div>
+    </div>
+    <!--------------------------------------------- Portfolio---------------------------------------------------------------->
+
+    <div id="portfolio" class="row">
+      <ul id="tabs-swipe-demo" class="tabs grey lighten-2" style="padding-left: 12px;">
+        <li class="tab col s3"><a class="active black-text" href="#test-swipe-3">Achievements</ABBR></a></li>
+        <li class="tab col s3"><a class="black-text" href="#test-swipe-1">Academics</a></li>
+        <!-- <li class="tab col s3"><a class="black-text" href="#test-swipe-2">Skills</a></li> -->
+      </ul>
+      <!--------------------------------------------- Education---------------------------------------------------------------->
+
+      <div id="test-swipe-1" class="col s12">
+        <div class="card section grey lighten-3"
+          style="padding-left: 20px;padding-right: 20px;margin-top: 0px;margin-bottom: 0px;">
+
+          <div class="row">
+            <h5 class="flow-text">Bachelor of Computer Engineering (B. E.)</h5>
+            <div class="col s6"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>
+              Savitribai Phule Pune University</div>
+            <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">event</i>
+              June, 2013 - June, 2017</div>
+            <div class="col s6"> <i class="material-icons"
+                style="vertical-align: middle;margin-bottom: 5px;">location_on</i> Amrutvahini College of Engineering,
+              Sangamner 422605</div>
+            <div class="col s4"> <i class="material-icons"
+                style="vertical-align: middle;margin-bottom: 5px;">trending_up
+              </i> 62.34 %</div>
           </div>
-          <div id="nav" class="footer-copyright  blue-grey darken-4">
-            <div class="container">
-            <a class="color-primary-dark right" href="#!"> &copy 2017 All Rights Reserved.</a>
-            </div>
-          </div>
-        </footer>
+          <div class="card-action"></div>
 
-    </center></body>
-  </html>
-        
+          <div class="row">
+            <h5 class="flow-text">Higher Secondary School Certificate (H. S. C.)</h5>
+            <div class="col s6"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>
+              Maharashtra State Board</div>
+            <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">event</i>
+              June, 2011 - June, 2013</div>
+            <div class="col s6"> <i class="material-icons"
+                style="vertical-align: middle;margin-bottom: 5px;">location_on</i> Amrutvahini College of Engineering,
+              Sangamner 422605</div>
+            <div class="col s4"> <i class="material-icons"
+                style="vertical-align: middle;margin-bottom: 5px;">trending_up
+              </i> 70.00 %</div>
+          </div>
+          <div class="card-action"></div>
+
+          <div class="row">
+            <h5 class="flow-text">Secondary School Certificate (S. S. C.)</h5>
+            <div class="col s6"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">school</i>
+              Maharashtra State Board</div>
+            <div class="col s4"> <i class="material-icons" style="vertical-align: middle;margin-bottom: 5px;">event</i>
+              June, 2010 - June, 2011</div>
+            <div class="col s6"> <i class="material-icons"
+                style="vertical-align: middle;margin-bottom: 5px;">location_on</i> Amrutvahini College of Engineering,
+              Sangamner 422605</div>
+            <div class="col s4"> <i class="material-icons"
+                style="vertical-align: middle;margin-bottom: 5px;">trending_up
+              </i> 83.64 %</div>
+          </div>
+        </div>
+      </div>
+      <!------------------------------------------------------------------ Honors and Awards-------------------------------------->
+      <div id="test-swipe-3" class="col s12">
+        <ul class="collapsible popout" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i class="material-icons">stars</i>Runner up at Smart India Hackathon 2017,
+              Trivandrum, Kerala</div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">mode_edit</i>Published paper on Natural Language
+              Processing
+              with 7% similarity index.</div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">monetization_on</i>Received scholorship from State
+              Government
+              each year of Engineering under TFWS.</div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">local_activity</i>Local Guide at Google. </div>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+
+    <!--------------------------------------------- Git---------------------------------------------------------------->
+
+
+    <!-- Element Showed -->
+    <a href="http://github.com/amitgunjal26/" id="menu" class="waves-effect waves-light"
+      style="position: fixed;bottom:40px;right: 40px;">
+      <img class="tooltipped" data-position="left" data-delay="50" data-tooltip="View my work on GitHub."
+        src="images/git250.png" height="64" width="64">
+    </a>
+
+    <!-- Tap Target Structure -->
+    <div class="tap-target black-text grey lighten-1" data-activates="menu">
+      <div class="tap-target-content">
+        <h5>Hello,</h5>
+        <p>Click here to follow on GitHub.</p>
+        <p>Star, Fork, Contribute.
+        </p>
+      </div>
+    </div>
+
+
+
+    <!--------------------------------------------- Footer---------------------------------------------------------------->
+
+    <footer class="page-footer white" style="padding: 20px; text-align: center; font-family: Arial, sans-serif;">
+      <p style="margin: 0; font-size: 16px; color: #333;">2025 Amit Gunjal</p>
+      <div style="margin-top: 10px;">
+        <a href="https://www.linkedin.com/in/amit-gunjal-8612068a/" target="_blank"
+          style="text-decoration: none; margin: 0 10px; color: #0077b5; font-size: 24px;">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:amitgunjal26@gmail.com" target="_blank"
+          style="text-decoration: none; margin: 0 10px; color: #d44638; font-size: 24px;">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/_amitgunjal" target="_blank"
+          style="text-decoration: none; margin: 0 10px; color: #e1306c; font-size: 24px;">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/_amitgunjal" target="_blank"
+          style="text-decoration: none; margin: 0 10px; color: #1da1f2; font-size: 24px;">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </footer>
+</body>
+
+</html>
